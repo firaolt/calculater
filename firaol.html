@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+    <style>
+        body{
+               margin: 0;
+               padding: 0;
+            font-family: montserrat;
+            background: black;
+            color: white;
+        }
+        .center{
+                 display: flex;
+                 text-align: center;
+                 justify-content: center;
+                 align-items: center;
+                 min-height: 100vh;
+        }
+        .ring{
+               position: absolute;
+               width: 200px;
+               height: 200px;
+               border-radius: 50%;
+                animation: ring 160s linear;
+        }
+        @keyframes ring {
+            0%{
+                transform: rotate(0deg);
+                box-shadow: 1px 5px 2px #e65c00;
+            }
+            50%{
+                transform: rotate(10deg);
+                box-shadow: 1px 5px 2px #18b201;
+            }
+            0%{
+                transform: rotate(36009deg);
+                box-shadow: 1px 5px 2px #0456c8}
+        }
+        .ring:before{
+                      position: absolute;
+                      content: '';
+                      left: 0;
+            top: 0;
+            height: 100%;
+            width: 100%;
+            border-radius: 50%;
+            box-shadow: 0 0 5px rgba(255,255,255,.3);
+        }
+        span{
+              color: lift:
+              font-size: 20px;
+              text-transform: uppercase;
+            letter-spacing: 1px;
+            line-height: 200px;
+            font-weight: bold;
+            animation: text 1s ease-in-out infinite;
+        }
+        @keyframes text {
+            50%{
+                 color: black;
+            }
+        }
+        audio{
+               background-color: white;
+            color: yellow;
+            solid-color: #00ec00;
+                width: 1000px;
+            -webkit-box-shadow: 5px 5px 15px 5px #fb2525;
+            box-shadow: 5px 5px 15px 5px #fb2525;;
+
+        }
+        audio:hover{
+            -webkit-box-shadow: 5px 5px 15px 5px yellow;
+            box-shadow: 5px 5px 15px 5px yellow;;
+            background-color: yellow;
+        }
+        div{
+            text-align: center;
+        }
+        #ghhj{
+            background: deepskyblue;
+            width: 300px;
+            height: 80px;
+            font-weight: bold;
+            font-size: 30px;
+            -webkit-box-shadow: 5px 5px 15px 5px deepskyblue;
+            box-shadow: 5px 5px 15px 5px deepskyblue;
+        }
+        #ghhj:hover{
+            -webkit-box-shadow: 5px 5px 15px 5px greenyellow;
+            box-shadow: 5px 5px 15px 5px yellow;
+            -webkit-box-shadow: 5px 5px 15px 5px yellow;
+            box-shadow: 5px 5px 15px 5px yellow;
+            background-color: yellow;
+        }
+    </style>
+</head>
+<body>
+
+   <div class="center">
+       <div class="ring"></div>
+       <span>loading...</span>
+   </div>
+   <div>
+       <a href="cal.html"><input type="button"value="go to calculater"id="ghhj"></a>
+   </div>
+   <br>
+   <br>
+   <br>
+<audio controls>
+    <source src="Kalimba.ogg">
+    <source src="Kalimba.mp3">
+</audio>
+
+</body>
+</html>
